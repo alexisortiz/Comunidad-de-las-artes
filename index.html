@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css'>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">   
+    <title>Comunidad de las Artes</title>
+
+</head>
+
+    
+<body class="d-flex justify-content-md-between align-items-center flex-column" style="background-color: black;">
+
+<main>
+   <div class="col-12" style="padding-bottom: 30px;text-align: center;">
+    <img src="img/comunidaddelasartes.png" alt="" class="ui centered spaced image" >
+    </div>
+    
+<div class="container d-flex justify-content-center align-items-center flex-xs-row flex-column" style="background-color:white;text-align: center;border-radius: 10px;padding: 30px;">
+
+<div class="col-lg-10 col-xs-12">
+       <h1>¡BIENVENIDO!</h1>
+        <p>La Comunidad de las Artes te permite acceder a beneficios y descuentos en grandes espectáculos. Al inscribirte de forma gratuita, podrás solicitar y gestionar tus cupones de descuento en nuestra plataforma.</p>
+</div>
+
+<div class="col-12 d-flex justify-content-around flex-column flex-lg-row">
+
+<div class="col-lg-4 col-xs-12" style="padding-top: 20px;padding-bottom: 20px;">
+<h4>SOCIOS DE LA COMUNIDAD</h4>
+<form class="ui form" style="padding-top: 10px;">
+  <div class="field">
+    <label>RUT</label>
+    <input name="rut" placeholder="Ingrese su rut" type="number" style="text-align: center;">
+  </div>
+  <div class="field">
+    <label>CONTRASEÑA</label>
+    <input name="password" placeholder="Ingrese su contraseña" type="password" style="text-align: center;">
+  </div>
+<div class="ui error message"></div>
+<!--
+  <div class="inline field">
+      <label><a href="#">¿Olvidaste tu clave?</a></label>
+  </div>
+-->
+  <button class="ui button" type="submit" style="padding-bottom: 10px;">INGRESAR</button>
+</form>
+
+</div>
+
+<div class="col-lg-4 col-xs-12 d-flex flex-column justify-content-between" style="padding-bottom: 20px;">
+<div>
+    <h4 style="padding-top: 20px; padding-bottom: 10px;">¿AÚN NO PERTENECES A LA COMUNIDAD?</h4>
+<button type="button" class="ui yellow button" data-toggle="modal" data-target="#myModal">INSCRÍBETE AQUÍ</button>
+</div>
+<div>
+<h4 style="padding-top: 20px; padding-bottom: 10px;">¿TIENES PROBLEMAS CON TU CONTRASEÑA?</h4>
+<button type="button" class="ui yellow button" data-toggle="modal" data-target="#myModal">SOLICITA TU CLAVE</button>
+</div>
+</div>
+
+<div class="col-lg-4 col-sm-12" style="padding-top: 20px;padding-bottom: 20px;">
+<h4>CONOCE LOS CONVENIOS QUE TENEMOS DISPONIBLES</h4>
+<div id="showmodal" class="ui button yellow create_btn" type="button">GENERAR CUPÓN</div>
+</div>
+</div>
+</div>
+
+</main>
+
+<div style="padding-top: 10px;">
+<button class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</button>
+<button class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</button>
+<button class="ui circular instagram icon button">
+  <i class="instagram icon"></i>
+</button>
+</div>
+
+<div class="ui mini modal event-modal">
+  <div class="header" style="text-align: center;">
+    GENERAR CUPÓN
+  </div>    
+  <div class="content">
+    <div class="col-12">
+<div class="ui form" style="color: white">
+  <div class="field">
+    <label>CONVENIOS DISPONIBLES</label>
+    <select class="ui search dropdown">
+      <option value="">Seleccione Alianza</option>
+      <option value="00">Club de Lectores El Mercurio</option>
+    </select>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui deny black button">CERRAR</div>
+    <div id="trigger2" class="ui green button">SIGUIENTE</div>
+  </div>
+</div>
+        
+<div class="col-md-4 col-sm-12 ui info event-modal modal" data-object="trigger2">
+  <div class="header" style="text-align: center;">CONVENIOS DISPONIBLES</div>
+  <div class="image content">
+    <img class="image">
+
+<div class="col-12">
+<form class="ui form d-flex flex-column justify-content-center" style="padding-top: 10px;text-align: center;">
+  <div class="field">
+    <label>RUT</label>
+    <input name="rut" placeholder="Ingrese su rut" type="number" style="text-align: center;">
+  </div>
+  <div class="field">
+    <label>CONTRASEÑA</label>
+    <input name="password" placeholder="Ingrese su contraseña" type="password" style="text-align: center;">
+  </div>
+  <div class="inline field">
+      <label><a>¿Olvidaste tu clave?</a></label>
+  </div>
+<div class="ui error message"></div>
+  <div class="actions">
+    <div class="ui deny black button">CERRAR</div>
+    <button class="ui button" type="submit">INGRESAR</button>
+  </div>
+</form>
+
+</div>
+  </div>
+</div>
+                        
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.js'></script>
+<script  src="js/index.js"></script>
+<script src="js/form.js"></script>
+<script src="js/validador.js"></script>
+
+</body>
+</html>
